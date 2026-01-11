@@ -2,14 +2,15 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Khushi from "./pages/Khushi";
-import Portfolio from "./pages/Portfolio";
+import Atharv from "./pages/Atharv";
+
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/khushi" element={<Khushi />} />
-      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/atharv" element={<Atharv />} />
     </Routes>
   );
 }

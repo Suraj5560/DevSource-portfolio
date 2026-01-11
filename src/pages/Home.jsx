@@ -72,6 +72,7 @@ export default function Home() {
           <h3>Team Members</h3>
 
           <div className="members-buttons">
+            <MemberButton name="Atharv Handa" link="/atharv" />
             <MemberButton name="Mohd. Sami" link="/Sami/index.html" />
             <MemberButton name="Vasu Garg" link="/vasu/index.html" />
             <MemberButton name="Nikhil" link="/nikhil" />
