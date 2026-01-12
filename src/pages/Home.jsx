@@ -76,7 +76,7 @@ export default function Home() {
             <MemberButton name="Mohd. Sami" link="/Sami/index.html" />
             <MemberButton name="Vasu Garg" link="/vasu/index.html" />
             <MemberButton name="Nikhil" link="/nikhil" />
-            <MemberButton name="Jiya Agrawal" link="/portfolio" />
+            <MemberButton name="Jiya Agrawal" link="/jiya" />
           </div>
         </motion.div>
       </section>
