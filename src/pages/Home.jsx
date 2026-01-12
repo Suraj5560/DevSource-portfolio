@@ -73,7 +73,7 @@ export default function Home() {
 
           <div className="members-buttons">
             <MemberButton name="Atharv Handa" link="/atharv" />
-            <MemberButton name="Mohd. Sami" link="/Sami/index.html" />
+            <MemberButton name="Mohd. Sami" link="https://samicode.netlify.app/" />
             <MemberButton name="Vasu Garg" link="/vasu/index.html" />
             <MemberButton name="Nikhil" link="/nikhil" />
             <MemberButton name="Jiya Agrawal" link="/jiya" />
