@@ -16,15 +16,12 @@ const roles = [
   "Video Editor",
 ];
 
-// typing config
 const typingSpeed = 80;
 const deletingSpeed = 40;
 const pauseTime = 900;
 
 export default function Suraj() {
-  /* ===============================
-     SCROLL + MOUSE PARALLAX
-  ================================ */
+  
   const { scrollYProgress } = useScroll();
 
   const mouseX = useMotionValue(0);
@@ -49,9 +46,7 @@ export default function Suraj() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  /* ===============================
-     TYPING EFFECT
-  ================================ */
+  
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -80,9 +75,7 @@ export default function Suraj() {
     return () => clearTimeout(timeout);
   }, [text, isDeleting, roleIndex]);
 
-  /* ===============================
-     JSX
-  ================================ */
+  
   return (
     <motion.div className="suraj-wrapper">
       {/* 🌌 FAR GALAXY */}
@@ -95,7 +88,7 @@ export default function Suraj() {
         }}
       />
 
-      {/* ✨ MID STARS */}
+      {}
       <motion.div
         className="stars stars-mid"
         style={{
@@ -104,7 +97,7 @@ export default function Suraj() {
         }}
       />
 
-      {/* 🌠 NEAR STARS */}
+      {}
       <motion.div
         className="stars stars-near"
         style={{
@@ -113,9 +106,9 @@ export default function Suraj() {
         }}
       />
 
-      {/* CONTENT */}
+      {}
       <div className="content">
-        {/* NAVBAR */}
+        {}
         <nav className="nav">
           <h2 className="logo">Suraj</h2>
           <ul>
@@ -126,7 +119,7 @@ export default function Suraj() {
           </ul>
         </nav>
 
-        {/* HERO */}
+        {}
         <section className="hero">
           <div className="hero-left">
             <h1>
@@ -152,7 +145,7 @@ export default function Suraj() {
           </div>
         </section>
 
-        {/* SKILLS */}
+        {}
         <section className="skills">
           <h2>My Skills</h2>
           <div className="skill-grid">
@@ -168,7 +161,7 @@ export default function Suraj() {
           </div>
         </section>
 
-        {/* CONTACT */}
+        {}
         <section className="contact">
           <div className="contact-card">
             <h2>Contact Me</h2>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function MemberButton({ name, link }) {
   const isExternal = link.startsWith("http");
 
-  // 🔹 External link → <a>
   if (isExternal) {
     return (
       <motion.a
@@ -21,7 +20,6 @@ export default function MemberButton({ name, link }) {
     );
   }
 
-  // 🔹 Internal route → <Link>
   return (
     <motion.div
       whileHover={{ scale: 1.06 }}
