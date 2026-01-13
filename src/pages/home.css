@@ -13,7 +13,6 @@ body {
   min-height: 100vh;
 }
 
-
 .heroo {
   height: 100vh;
   display: flex;
@@ -25,16 +24,21 @@ body {
 .heroo h1 {
   font-size: 4.2rem;
   font-weight: 600;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .heroo span {
   color: #ff7a00;
 }
 
+.heroo p {
+  margin-top: 6px;
+  opacity: 0.6;
+  font-size: 0.95rem;
+}
 .hero-title {
   margin-bottom: 14px;
-  transform: translateY(-20px);
+  transform: translateY(-20px); 
 }
 
 .hero-desc {
@@ -57,7 +61,7 @@ body {
   margin-bottom: 70px;
   letter-spacing: 1px;
   opacity: 0.85;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .team-grid {
@@ -108,6 +112,7 @@ body {
   filter: drop-shadow(0 0 8px rgba(255, 122, 0, 0.45));
 }
 
+
 .card:hover .hex {
   opacity: 1;
 }
@@ -144,6 +149,62 @@ body {
   color: black;
 }
 
+.glitch {
+  position: relative;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.glitch .accent {
+  color: #ff7a00;
+}
+
+.glitch span[aria-hidden="true"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.glitch span:first-child {
+  color: #ff7a00;
+  transform: translate(-2px, 0);
+  animation: glitch-left 2.4s infinite linear alternate-reverse;
+}
+
+
+.glitch span:last-child {
+  color: white;
+  transform: translate(2px, 0);
+  animation: glitch-right 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-left {
+  0% { clip-path: inset(0 0 85% 0); }
+  20% { clip-path: inset(10% 0 60% 0); }
+  40% { clip-path: inset(40% 0 35% 0); }
+  60% { clip-path: inset(70% 0 10% 0); }
+  80% { clip-path: inset(25% 0 55% 0); }
+  100% { clip-path: inset(0 0 85% 0); }
+}
+
+@keyframes glitch-right {
+  0% { clip-path: inset(85% 0 0 0); }
+  20% { clip-path: inset(60% 0 10% 0); }
+  40% { clip-path: inset(35% 0 40% 0); }
+  60% { clip-path: inset(10% 0 70% 0); }
+  80% { clip-path: inset(55% 0 25% 0); }
+  100% { clip-path: inset(85% 0 0 0); }
+}
+
+.glitch:hover span {
+  animation-duration: 0.6s;
+}
+
 
 .members {
   padding: 90px 0 140px;
@@ -156,50 +217,34 @@ body {
   letter-spacing: 1px;
   margin-bottom: 30px;
   opacity: 0.85;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .members-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
-.member-btn-wrapper {
-  display: flex;
-}
-
 .member-btn {
-  min-width: 180px;            
-  height: 44px;                
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0 22px;
-  border: 1px solid rgba(255, 122, 0, 0.6);
-  border-radius: 6px;
-
-  background: transparent;
+  padding: 10px 22px;
+  border: 1px solid rgba(255,122,0,0.5);
   color: #ff7a00;
   text-decoration: none;
-
   font-size: 0.8rem;
   letter-spacing: 1px;
-  white-space: nowrap;
-
   transition: all 0.3s ease;
 }
 
 .member-btn:hover {
   background: #ff7a00;
   color: black;
-  box-shadow: 0 0 18px rgba(255, 122, 0, 0.6);
 }
-
-
+.accent {
+  color: #ff7a00;
+  font-weight: 500;
+}
 .universe-bg {
   position: fixed;
   inset: 0;
@@ -211,9 +256,4 @@ body {
 .universe-bg svg {
   width: 100%;
   height: 100%;
-}
-
-.accent {
-  color: #ff7a00;
-  font-weight: 500;
 }
