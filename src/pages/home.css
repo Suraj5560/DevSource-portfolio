@@ -209,6 +209,7 @@ body {
 .members {
   padding: 90px 0 140px;
   text-align: center;
+  
 }
 
 .members h3 {
@@ -223,8 +224,10 @@ body {
 .members-buttons {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   flex-wrap: wrap;
+  max-width: 1200px;      /* ⭐ KEY FIX */
+  margin: 0 auto;
 }
 
 .member-btn {
