@@ -1,6 +1,4 @@
-/* ===============================
-   GLOBAL WRAPPER
-================================ */
+
 .suraj-wrapper {
   min-height: 100vh;
   color: white;
@@ -9,9 +7,7 @@
   overflow-x: hidden;
 }
 
-/* ===============================
-   NAVBAR
-================================ */
+
 .nav {
   position: fixed;
   top: 0;
@@ -49,9 +45,7 @@
   color: #ff7a18;
 }
 
-/* ===============================
-   HERO SECTION
-================================ */
+
 .hero {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -62,11 +56,11 @@
   margin: 0 auto;
   min-height: 100vh;
 
-  padding-top: 160px; /* space below navbar */
+  padding-top: 160px; 
   padding-bottom: 100px;
 }
 
-/* LEFT CONTENT */
+
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -92,12 +86,12 @@
   color: #ff7a18;
 }
 
-/* BUTTONS */
+
 .buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;      /* ✅ real spacing */
+  gap: 16px;      
   margin-top: 22px;
 }
 
@@ -105,7 +99,7 @@
   height: 40px;
   padding: 0 22px;
 
-  display: inline-flex;       /* NOT flex container for layout */
+  display: inline-flex;       
   align-items: center;
   justify-content: center;
 
@@ -149,7 +143,7 @@
   box-shadow: 0 10px 30px rgba(255, 122, 24, 0.5);
 }
 
-/* RIGHT IMAGE */
+
 .hero-right {
   display: flex;
   justify-content: center;
@@ -165,7 +159,6 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* GLOW BEHIND IMAGE */
 .hero-right::before {
   content: "";
   position: absolute;
@@ -176,9 +169,7 @@
   z-index: 0;
 }
 
-/* ===============================
-   SKILLS
-================================ */
+
 .skills {
   text-align: center;
   padding: 80px;
@@ -205,9 +196,7 @@
   transform: scale(1.1);
 }
 
-/* ===============================
-   CONTACT (FINAL UPGRADE)
-================================ */
+
 .contact {
   display: flex;
   justify-content: center;
@@ -230,7 +219,6 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
 }
 
-/* Glow behind card */
 .contact-card::before {
   content: "";
   position: absolute;
@@ -247,7 +235,7 @@
 .contact-card h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  white-space: nowrap; /* 👈 prevents breaking */
+  white-space: nowrap; 
 }
 
 .contact-card p {
@@ -257,7 +245,6 @@
   margin-bottom: 28px;
 }
 
-/* Buttons */
 .contact-buttons {
   display: flex;
   justify-content: center;
@@ -268,17 +255,14 @@
   min-width: 130px;
 }
 
-/* LinkedIn hover */
 .contact-btn.linkedin:hover {
   box-shadow: 0 0 28px rgba(10, 102, 194, 0.85);
 }
 
-/* Email hover */
 .contact-btn.email:hover {
   box-shadow: 0 0 28px rgba(255, 122, 24, 0.85);
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .contact-card {
     padding: 45px 30px;
@@ -294,9 +278,7 @@
 }
 
 
-/* ===============================
-   RESPONSIVE
-================================ */
+
 @media (max-width: 900px) {
   .nav {
     padding: 16px 30px;
@@ -319,32 +301,28 @@
 }
 
 
-/* HTML — RED */
+
 .skill-card.html:hover {
   box-shadow: 0 0 25px rgba(255, 72, 72, 0.9);
 }
 
-/* CSS — BLUE */
+
 .skill-card.css:hover {
   box-shadow: 0 0 25px rgba(0, 150, 255, 0.9);
 }
 
-/* JavaScript — YELLOW */
 .skill-card.javascript:hover {
   box-shadow: 0 0 25px rgba(255, 223, 0, 0.9);
 }
 
-/* React — BLUE (React Cyan-Blue) */
 .skill-card.react:hover {
   box-shadow: 0 0 28px rgba(97, 218, 251, 0.95);
 }
 
-/* C — CYAN */
 .skill-card.c:hover {
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
 }
 
-/* Java — ORANGE */
 .skill-card.java:hover {
   box-shadow: 0 0 25px rgba(255, 140, 0, 0.9);
 }
@@ -395,9 +373,7 @@
 
 
 
-/* ===============================
-   🌌 STAR LAYERS
-================================ */
+
 .stars {
   position: fixed;
   inset: 0;
@@ -407,13 +383,11 @@
   background-position: center;
 }
 
-/* FAR GALAXY */
 .stars-far {
   opacity: 0.55;
   filter: blur(1px);
 }
 
-/* MID STARS */
 .stars-mid {
   background-image:
     radial-gradient(2px 2px at 20% 30%, white, transparent),
@@ -422,7 +396,6 @@
   opacity: 0.6;
 }
 
-/* NEAR STARS (TWINKLING) */
 .stars-near {
   background-image:
     radial-gradient(2px 2px at 10% 20%, white, transparent),
@@ -431,14 +404,12 @@
   animation: twinkle 4s infinite ease-in-out;
 }
 
-/* 🌠 Twinkling animation */
 @keyframes twinkle {
   0% { opacity: 0.3; }
   50% { opacity: 0.8; }
   100% { opacity: 0.3; }
 }
 
-/* DARK OVERLAY */
 .suraj-wrapper::before {
   content: "";
   position: fixed;
@@ -451,7 +422,6 @@
   );
 }
 
-/* CONTENT ABOVE EVERYTHING */
 .content {
   position: relative;
   z-index: 1;

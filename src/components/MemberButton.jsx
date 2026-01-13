@@ -1,18 +1,36 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const MotionLink = motion(Link);
-
 export default function MemberButton({ name, link }) {
+  const isExternal = link.startsWith("http");
+
+  // 🔹 External link → <a>
+  if (isExternal) {
+    return (
+      <motion.a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="member-btn"
+        whileHover={{ scale: 1.06 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "spring", stiffness: 220 }}
+      >
+        {name}
+      </motion.a>
+    );
+  }
+
+  // 🔹 Internal route → <Link>
   return (
-    <MotionLink
-      to={link}
-      className="member-btn"
+    <motion.div
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.95 }}
       transition={{ type: "spring", stiffness: 220 }}
     >
-      {name}
-    </MotionLink>
+      <Link to={link} className="member-btn">
+        {name}
+      </Link>
+    </motion.div>
   );
 }
