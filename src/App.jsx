@@ -1,17 +1,22 @@
-import React from 'react';
+import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Khushi from "./pages/Khushi";
 import Atharv from "./pages/Atharv";
 import Nikhil from "./pages/Nikhil";
 import Suraj from "./pages/Suraj";
-import Portfolio from './pages/Portfolio';
+import Vinit from "./pages/Vinit";
+import Himanshu from "./pages/Himanshu";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
     <Routes>
+      {/* HOME */}
       <Route path="/" element={<Home />} />
 
+      {/* KHUSHI */}
       <Route
         path="/khushi"
         element={
@@ -21,6 +26,7 @@ function App() {
         }
       />
 
+      {/* ATHARV */}
       <Route
         path="/atharv"
         element={
@@ -30,6 +36,7 @@ function App() {
         }
       />
 
+      {/* NIKHIL */}
       <Route
         path="/nikhil"
         element={
@@ -39,6 +46,7 @@ function App() {
         }
       />
 
+      {/* JIYA / PORTFOLIO */}
       <Route
         path="/jiya"
         element={
@@ -48,11 +56,35 @@ function App() {
         }
       />
 
+      {/* SURAJ */}
       <Route
-        path="/Suraj"
-        element={<Suraj />}
+        path="/suraj"
+        element={
+          <div className="portfolio-suraj">
+            <Suraj />
+          </div>
+        }
       />
 
+      {/* HIMANSHU */}
+      <Route
+        path="/himanshu"
+        element={
+          <div className="portfolio-himanshu">
+            <Himanshu />
+          </div>
+        }
+      />
+
+      {/* VINIT */}
+      <Route
+        path="/vinit"
+        element={
+          <div className="portfolio-vinit">
+            <Vinit />
+          </div>
+        }
+      />
     </Routes>
   );
 }
