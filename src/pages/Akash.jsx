@@ -168,18 +168,21 @@ const Akash = () => {
               {
                 title: "Weather App",
                 desc: "A real-time weather application that fetches data based on user location.",
+                Githublink: "https://github.com/I-akashdas/Weather-App",
                 tags: ["React", "API", "CSS"],
                 color: "#3b82f6"
               },
               {
                 title: "To-Do List",
                 desc: "A task management app to organize daily activities with local storage.",
+                Githublink: "https://github.com/I-akashdas/To-Do-List",
                 tags: ["HTML", "JS", "CSS"],
                 color: "#a855f7"
               },
               {
                 title: "Portfolio Website",
                 desc: "A personal portfolio website showcasing skills and projects.",
+                Githublink: "https://github.com/I-akashdas/Weather-App",
                 tags: ["React", "Framer", "UI/UX"],
                 color: "#f97316"
               }
@@ -227,19 +230,19 @@ const Akash = () => {
             <a href="https://github.com/I-akashdas" target="_blank" rel="noreferrer" className="akash-social-btn">
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/akash-das-64a0b7329" target="_blank" rel="noreferrer" className="akash-social-btn">
+            <a href="https://www.linkedin.com/in/akashdas2004" target="_blank" rel="noreferrer" className="akash-social-btn">
               <Linkedin size={20} />
             </a>
             <a href="https://x.com/_iakashdas" target="_blank" rel="noreferrer" className="akash-social-btn">
               <Twitter size={20} />
             </a>
-            <a href="mailto:akash@example.com" className="akash-social-btn">
+            <a href="mailto:akashdas.edu@gmail.com" className="akash-social-btn">
               <Mail size={20} />
             </a>
           </div>
 
           <p style={{ marginTop: '60px', color: '#475569', fontSize: '0.9rem' }}>
-            © 2025 Akash Das. All Rights Reserved.
+            © 2026 Akash Das. All Rights Reserved.
           </p>
         </section>
 
