@@ -8,7 +8,7 @@ import Akash from "./pages/Akash";
 import Nikhil from "./pages/Nikhil";
 import Vinit from "./pages/Vinit";
 import Portfolio from "./pages/Portfolio";
-import Himanshu from "./pages/Himanshu";
+// import Himanshu from "./pages/Himanshu";
 
 function App() {
   return (
@@ -60,14 +60,14 @@ function App() {
         }
       />
 
-      <Route
+      {/* <Route
         path="/Himanshu"
         element={
           <div className="himanshu-portfolio">
             <Himanshu />
           </div>
         }
-      />
+      /> */}
       <Route
         path="/Vinit"
         element={
