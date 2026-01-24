@@ -155,21 +155,21 @@ const Home = () => {
         </motion.h1>
 
         <motion.p
-         className="hero-desc"
-         initial={{ opacity: 0, y: 10 }}
-         animate={{ opacity: 0.6, y: 0 }}
-         transition={{ delay: 0.3 }}
-       >
-         DevSource is a platform built by{" "}
-         <span className="accent">developers</span>, for{" "}
-         <span className="accent">developers</span>. We bridge the gap between{" "}
-         <span className="accent">learning</span> and{" "}
-         <span className="accent">real-world development</span> through{" "}
-         <span className="accent">project-based learning</span>,{" "}
-         <span className="accent">open-source culture</span>, and{" "}
-         <span className="accent">collaborative growth</span>. This platform showcases
-         the people behind <span className="accent">DevSource</span> and their{" "}
-         <span className="accent">contributions</span>.
+          className="hero-desc"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 0.6, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          DevSource is a platform built by{" "}
+          <span className="accent">developers</span>, for{" "}
+          <span className="accent">developers</span>. We bridge the gap between{" "}
+          <span className="accent">learning</span> and{" "}
+          <span className="accent">real-world development</span> through{" "}
+          <span className="accent">project-based learning</span>,{" "}
+          <span className="accent">open-source culture</span>, and{" "}
+          <span className="accent">collaborative growth</span>. This platform showcases
+          the people behind <span className="accent">DevSource</span> and their{" "}
+          <span className="accent">contributions</span>.
         </motion.p>
 
       </section>
@@ -211,8 +211,10 @@ const Home = () => {
             <MemberButton name="Jiya Agrawal" link="/jiya" />
             <MemberButton name="Vinit Tiwari" link="/Vinit" />
             <MemberButton name="Himanshu Singh" link="https://portfolio-gules-two-28.vercel.app/" />
-            <MemberButton name="Suraj" link="https://dev-source-portfolio-lovat.vercel.app/Suraj"/>
-
+            <MemberButton name="Suraj" link="https://dev-source-portfolio-lovat.vercel.app/Suraj" />
+          </div>
+        </motion.div>
+      </section>
       {/* HERO */}
       <div className="hero-wrapper">
         <div className="sticky-hero">
@@ -263,28 +265,28 @@ const Home = () => {
             </p>
             <section className="leadership-section">
               <h3 className="leadership-heading ds-heading">Leadership</h3>
-         
-               <div className="leadership-cards">
-                 <LeaderCard
-                   name="Khushi Bhaskar"
-                   role="LEAD"
-                   img="/khushi.JPG"
-                   link="/khushi"
-                 />
-         
-                 <LeaderCard
-                   name="Krrish Khowal"
-                   role="VICE LEAD"
-                   img="/vice_lead.JPG"
-                   link="https://www.linkedin.com/in/krrish-khowal-150885311/"
-                 />
-               </div>
-             </section>
+
+              <div className="leadership-cards">
+                <LeaderCard
+                  name="Khushi Bhaskar"
+                  role="LEAD"
+                  img="/khushi.JPG"
+                  link="/khushi"
+                />
+
+                <LeaderCard
+                  name="Krrish Khowal"
+                  role="VICE LEAD"
+                  img="/vice_lead.JPG"
+                  link="https://www.linkedin.com/in/krrish-khowal-150885311/"
+                />
+              </div>
+            </section>
 
             {/* ================= TEAM MEMBERS ================= */}
             <section className="team-section">
               <h3 className="team-heading ds-heading">Team Members</h3>
-            
+
               <div className="members-buttons">
                 <MemberButton name="Atharv Handa" link="/atharv" />
                 <MemberButton name="Mohd. Sami" link="https://samicode.netlify.app/" />
@@ -300,7 +302,7 @@ const Home = () => {
                 <MemberButton name="Anshu Kumar" link="https://anshu-portfolio-sable.vercel.app/" />
               </div>
             </section>
-            
+
           </section>
         </div>
       </div>
