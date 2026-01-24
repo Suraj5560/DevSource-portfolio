@@ -16,13 +16,12 @@ const roles = [
   "Video Editor",
 ];
 
-
 const typingSpeed = 80;
 const deletingSpeed = 40;
 const pauseTime = 900;
 
 export default function Suraj() {
-
+  
   const { scrollYProgress } = useScroll();
 
   const mouseX = useMotionValue(0);
@@ -47,7 +46,7 @@ export default function Suraj() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-
+  
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -76,7 +75,7 @@ export default function Suraj() {
     return () => clearTimeout(timeout);
   }, [text, isDeleting, roleIndex]);
 
-
+  
   return (
     <motion.div className="suraj-wrapper">
       {/* 🌌 FAR GALAXY */}
@@ -89,7 +88,7 @@ export default function Suraj() {
         }}
       />
 
-      { }
+      {}
       <motion.div
         className="stars stars-mid"
         style={{
@@ -98,7 +97,7 @@ export default function Suraj() {
         }}
       />
 
-      { }
+      {}
       <motion.div
         className="stars stars-near"
         style={{
@@ -107,45 +106,20 @@ export default function Suraj() {
         }}
       />
 
-      { }
+      {}
       <div className="content">
-        { }
+        {}
         <nav className="nav">
           <h2 className="logo">Suraj</h2>
           <ul>
-            <li onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-              Home
-            </li>
-            <li
-              onClick={() =>
-                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              About
-            </li>
-            <li
-              onClick={() =>
-                document
-                  .getElementById("projects")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Projects
-            </li>
-            <li
-              onClick={() =>
-                document
-                  .querySelector(".contact")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Contact
-            </li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
           </ul>
-
         </nav>
 
-        { }
+        {}
         <section className="hero">
           <div className="hero-left">
             <h1>
@@ -161,31 +135,9 @@ export default function Suraj() {
             </h2>
 
             <div className="buttons">
-              <button
-                className="btn"
-                onClick={() =>
-                  window.open(
-                    "https://www.linkedin.com/in/suraj-vishwakarma-973630322/",
-                    "_blank"
-                  )
-                }
-              >
-                LinkedIn
-              </button>
-
-              <button
-                className="btn secondary"
-                onClick={() =>
-                  window.open(
-                    "https://github.com/Suraj5560",
-                    "_blank"
-                  )
-                }
-              >
-                GitHub
-              </button>
+              <button className="btn">Resume</button>
+              <button className="btn secondary">GitHub</button>
             </div>
-
           </div>
 
           <div className="hero-right">
@@ -193,116 +145,35 @@ export default function Suraj() {
           </div>
         </section>
 
-        { }
-
-
-        {/* ================= ABOUT SECTION ================= */}
-        <section className="about" id="about">
-
-          {/* SECTION TITLE LIKE "MY PROJECTS" */}
-          <h2 className="section-title">About Me</h2>
-
-          <div className="about-container">
-            <div className="about-left">
-              <img src={profileImg} alt="Suraj" />
-            </div>
-
-            <div className="about-right">
-              <p>
-                Hi, I’m Suraj — a passionate Web Developer focused on building modern,
-                responsive, and interactive websites. I enjoy turning ideas into
-                beautiful user experiences using React, JavaScript, and creative UI
-                design.
-              </p>
-
-              {/* SKILLS TEXT + BUTTONS */}
-              <h3 className="about-skills-title">Skills</h3>
-
-              <div className="about-skill-buttons">
-                {["HTML", "CSS", "JavaScript", "React", "C", "Java"].map((skill) => (
-                  <motion.div
-                    key={skill}
-                    className={`about-skill-btn ${skill.toLowerCase()}`}
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    {skill}
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* ================= PROJECTS SECTION ================= */}
-        <section className="projects" id="projects">
-          <h2>My Projects</h2>
-
-          <div className="project-grid">
-            {[
-              {
-                title: "Portfolio Website",
-                desc: "A modern personal portfolio built with React & Framer Motion.",
-              },
-              {
-                title: "E-Commerce App",
-                desc: "Full-stack MERN e-commerce platform with authentication.",
-              },
-              {
-                title: "Weather App",
-                desc: "Real-time weather app using OpenWeather API.",
-              },
-            ].map((project, index) => (
+        {}
+        <section className="skills">
+          <h2>My Skills</h2>
+          <div className="skill-grid">
+            {["HTML", "CSS", "JavaScript", "React", "C", "Java"].map((skill) => (
               <motion.div
-                key={index}
-                className="project-card"
-                whileHover={{ scale: 1.06 }}
+                key={skill}
+                className={`skill-card ${skill.toLowerCase()}`}
+                whileHover={{ scale: 1.1 }}
               >
-                <h3>{project.title}</h3>
-                <p>{project.desc}</p>
-                <button className="btn secondary">View Project</button>
+                {skill}
               </motion.div>
             ))}
           </div>
         </section>
 
-
-        { }
+        {}
         <section className="contact">
           <div className="contact-card">
             <h2>Contact Me</h2>
             <p>Let’s build something cool together 🚀</p>
 
             <div className="contact-buttons">
-              <button
-                className="btn contact-btn linkedin"
-                onClick={() =>
-                  window.open(
-                    "https://www.linkedin.com/in/suraj-vishwakarma-973630322/",
-                    "_blank"
-                  )
-                }
-              >
-                LinkedIn
-              </button>
-
-              <button
-                className="btn contact-btn email"
-                onClick={() =>
-                  window.open(
-                    "mailto:anurag291005@gmail.com",
-                    "_blank"
-                  )
-                }
-              >
-                Email
-              </button>
+              <button className="btn contact-btn linkedin">LinkedIn</button>
+              <button className="btn contact-btn email">Email</button>
             </div>
-
           </div>
         </section>
       </div>
     </motion.div>
   );
 }
-
