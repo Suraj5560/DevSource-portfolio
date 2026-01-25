@@ -1,23 +1,21 @@
+
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Home from "./pages/Home";
 import Khushi from "./pages/Khushi";
 import Atharv from "./pages/Atharv";
+import Suraj from "./pages/Suraj"
 import Akash from "./pages/Akash";
 import Nikhil from "./pages/Nikhil";
-import Suraj from "./pages/Suraj";
 import Vinit from "./pages/Vinit";
-import Himanshu from "./pages/Himanshu";
 import Portfolio from "./pages/Portfolio";
+// import Himanshu from "./pages/Himanshu";
 
 function App() {
   return (
     <Routes>
-      {/* HOME */}
       <Route path="/" element={<Home />} />
 
-      {/* KHUSHI */}
       <Route
         path="/khushi"
         element={
@@ -27,7 +25,6 @@ function App() {
         }
       />
 
-      {/* ATHARV */}
       <Route
         path="/atharv"
         element={
@@ -37,7 +34,6 @@ function App() {
         }
       />
 
-      {/* NIKHIL */}
       <Route
         path="/nikhil"
         element={
@@ -47,7 +43,6 @@ function App() {
         }
       />
 
-      {/* AKASH */}
       <Route
         path="/akash"
         element={
@@ -55,9 +50,8 @@ function App() {
             <Akash />
           </div>
         }
-      />
+      />  
 
-      {/* JIYA / PORTFOLIO */}
       <Route
         path="/jiya"
         element={
@@ -67,35 +61,34 @@ function App() {
         }
       />
 
-      {/* SURAJ */}
-      <Route
-        path="/suraj"
-        element={
-          <div className="portfolio-suraj">
-            <Suraj />
-          </div>
-        }
-      />
+     
 
-      {/* HIMANSHU */}
-      <Route
-        path="/himanshu"
+      {/* <Route
+        path="/Himanshu"
         element={
-          <div className="portfolio-himanshu">
+          <div className="himanshu-portfolio">
             <Himanshu />
           </div>
         }
-      />
-
-      {/* VINIT */}
+      /> */}
       <Route
-        path="/vinit"
+        path="/Vinit"
         element={
-          <div className="portfolio-vinit">
+          <div className="vinit-portfolio">
             <Vinit />
           </div>
         }
       />
+
+      <Route
+        path="/suraj"
+        element = {
+          <div className="suraj-portfolio">
+            <Suraj/>
+          </div>
+        }
+      />
+
     </Routes>
   );
 }
